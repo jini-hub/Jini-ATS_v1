@@ -7340,6 +7340,227 @@ body{background:radial-gradient(circle at 12% 10%,rgba(122,143,255,.22),transpar
 .table th{background:rgba(248,250,252,.58);color:#667085}.table td,.table th{border-bottom-color:rgba(148,163,184,.14)}
 @media(max-width:720px){body{background-attachment:scroll}.topbar{min-height:66px;padding:9px 12px;background:rgba(249,251,255,.78)}.page{padding:16px 14px 98px}.dashboard-hero,.jobs-hero,.candidates-hero,.analysis-hero,.report-hero{border-radius:23px}.mobile-bottom-nav{left:8px;right:8px;bottom:8px;height:70px;border:1px solid rgba(255,255,255,.92);border-radius:23px;background:rgba(255,255,255,.76);box-shadow:0 18px 40px rgba(58,67,100,.17);backdrop-filter:blur(28px) saturate(1.18);-webkit-backdrop-filter:blur(28px) saturate(1.18)}.mobile-bottom-nav button{border-radius:14px}.mobile-bottom-nav button.active{background:rgba(91,111,255,.10)}}
 </style>
+
+<style id="jini-ios27-reference-design">
+/* Jini ATS — iOS 27 reference design layer */
+:root{
+ --ios-bg:#f6f8fc;--ios-card:rgba(255,255,255,.84);--ios-line:rgba(221,226,238,.78);
+ --ios-text:#172033;--ios-muted:#8991a4;--ios-blue:#5577ff;--ios-purple:#7259f5;
+ --ios-shadow:0 16px 45px rgba(68,78,120,.08),0 2px 8px rgba(68,78,120,.035)
+}
+body{
+ background:
+  radial-gradient(circle at 16% 8%,rgba(120,148,255,.16),transparent 24%),
+  radial-gradient(circle at 90% 9%,rgba(236,182,255,.14),transparent 22%),
+  linear-gradient(145deg,#f5f8fd,#fbfbfe 48%,#f7f5fd)!important;
+ color:var(--ios-text)!important;
+}
+.app,.main{background:transparent!important}
+.sidebar{
+ width:244px!important;padding:28px 18px!important;
+ background:rgba(247,249,253,.76)!important;border-right:1px solid rgba(224,228,238,.72)!important;
+ box-shadow:none!important;backdrop-filter:blur(30px) saturate(1.15)!important;-webkit-backdrop-filter:blur(30px) saturate(1.15)!important
+}
+.brand{padding:4px 10px 28px!important;margin:0!important;background:transparent!important;border:0!important;box-shadow:none!important;
+ color:#182033!important;font-size:19px!important;font-weight:850!important;letter-spacing:-.6px!important}
+.brand span{color:#6c75f6!important}.brand .version{font-size:9px!important;color:#a1a8b8!important;margin-top:4px!important}
+.nav{gap:5px!important}
+.nav button{height:43px!important;padding:0 13px!important;border-radius:12px!important;color:#70798d!important;font-size:13px!important;font-weight:650!important}
+.nav button:nth-child(1)::before{content:"⌂";margin-right:11px}.nav button:nth-child(2)::before{content:"▣";margin-right:11px}.nav button:nth-child(3)::before{content:"♙";margin-right:11px}.nav button:nth-child(4)::before{content:"◎";margin-right:11px}.nav button:nth-child(5)::before{content:"▤";margin-right:11px}.nav button:nth-child(6)::before{content:"⚙";margin-right:11px}
+.nav button.active{background:linear-gradient(135deg,#edf1ff,#f3f1ff)!important;color:#586cf2!important;box-shadow:none!important}
+.nav button.active::after{content:"";position:absolute;right:10px;width:5px;height:5px;border-radius:50%;background:#6b74f7}
+.nav button.active::before{position:static!important;width:auto!important;height:auto!important;transform:none!important;background:none!important}
+.side-foot{font-size:10px!important;color:#adb3c0!important;background:transparent!important;border:0!important;box-shadow:none!important;padding:10px!important;left:18px!important;right:18px!important}
+.topbar{
+ min-height:72px!important;padding:10px 30px!important;background:rgba(255,255,255,.60)!important;border-bottom:1px solid rgba(229,232,240,.75)!important;
+ box-shadow:none!important;backdrop-filter:blur(28px)!important;-webkit-backdrop-filter:blur(28px)!important
+}
+.topbar h1{font-size:16px!important;font-weight:760!important;color:#20283b!important}.home-btn{display:none!important}
+.save-status{font-size:10px!important;color:#6b7280!important}.seed-btn{background:rgba(255,255,255,.68)!important}
+.btn{border-radius:11px!important;border:1px solid #e5e8f0!important;background:rgba(255,255,255,.8)!important;box-shadow:0 3px 10px rgba(55,65,100,.04)!important;font-size:12px!important}
+.btn.primary{border:0!important;background:linear-gradient(135deg,#5e7bff,#6c59ee)!important;color:#fff!important;box-shadow:0 8px 20px rgba(89,100,235,.20)!important}
+.page{max-width:1420px!important;padding:30px 34px 54px!important}
+
+/* Dashboard */
+.dashboard-hero{min-height:145px!important;padding:30px 34px!important;border-radius:23px!important;
+ background:linear-gradient(120deg,rgba(255,255,255,.92),rgba(247,249,255,.76))!important;border:1px solid rgba(255,255,255,.92)!important;
+ box-shadow:var(--ios-shadow)!important;overflow:hidden!important}
+.dashboard-hero h2{font-size:26px!important;line-height:1.3!important;letter-spacing:-1.15px!important;margin:5px 0 9px!important}
+.dashboard-hero p{font-size:12px!important;color:#8a92a4!important;line-height:1.65!important}
+.dashboard-eyebrow{font-size:10px!important;letter-spacing:.08em!important;color:#6c78f5!important}
+.dashboard-hero-mark{right:35px!important;top:18px!important}.dashboard-hero-orb{width:110px!important;height:110px!important;opacity:.9!important;
+ background:radial-gradient(circle at 35% 30%,#c8d5ff 0 12%,#b9c8ff 24%,#c7bafc 52%,#e6e7ff 70%,rgba(255,255,255,.3) 72%)!important;
+ box-shadow:0 20px 45px rgba(110,105,220,.20)!important}
+.dashboard-kpi-grid{grid-template-columns:repeat(4,1fr)!important;gap:14px!important}
+.dashboard-kpi-card{min-height:124px!important;padding:17px 18px!important;border-radius:18px!important;background:var(--ios-card)!important;border:1px solid rgba(255,255,255,.95)!important;box-shadow:var(--ios-shadow)!important}
+.dashboard-kpi-top{margin-bottom:8px!important}.dashboard-kpi-icon{width:30px!important;height:30px!important;border-radius:9px!important;font-size:12px!important}
+.dashboard-kpi-label{font-size:10px!important;color:#9299a9!important}.dashboard-kpi-number{font-size:24px!important;margin-top:2px!important;color:#1b2438!important}.dashboard-kpi-description{font-size:9px!important;color:#a5acba!important;margin-top:3px!important}
+.dashboard-main-grid{grid-template-columns:minmax(0,1.5fr) minmax(300px,.8fr)!important;gap:16px!important}
+.dashboard-panel{padding:20px!important;border-radius:19px!important;background:var(--ios-card)!important;border:1px solid rgba(255,255,255,.95)!important;box-shadow:var(--ios-shadow)!important}
+.dashboard-panel-title{font-size:13px!important}.dashboard-panel-subtitle{font-size:9px!important;color:#a0a7b5!important}
+.dashboard-funnel{gap:13px!important}.dashboard-funnel-label{font-size:10px!important}.dashboard-funnel-track{height:8px!important;background:#edf0f6!important}.dashboard-funnel-fill{background:linear-gradient(90deg,#6b86ff,#8469f4)!important}
+.dashboard-candidate-row,.dashboard-job-row{border-color:#edf0f5!important}.dashboard-candidate-avatar{background:linear-gradient(135deg,#edf1ff,#f1ecff)!important;color:#6573f3!important}
+.dashboard-more-btn{color:#6573f3!important;font-size:10px!important}
+.dashboard-score-card{display:flex;align-items:center;justify-content:center;gap:28px;min-height:185px}
+.dashboard-score-ring{--p:0;width:118px;height:118px;border-radius:50%;display:grid;place-items:center;position:relative;background:conic-gradient(#6a7bf5 calc(var(--p)*1%),#eceef5 0)}
+.dashboard-score-ring::after{content:"";position:absolute;width:92px;height:92px;border-radius:50%;background:#fff}
+.dashboard-score-value{position:relative;z-index:1;text-align:center}.dashboard-score-value strong{font-size:27px}.dashboard-score-value span{display:block;font-size:9px;color:#a0a7b5;margin-top:2px}
+.dashboard-ai-note{padding:12px 14px;border-radius:13px;background:linear-gradient(135deg,#f1f3ff,#f7f2ff);font-size:10px;line-height:1.6;color:#687087;margin-top:12px}
+.dashboard-ai-note b{display:block;color:#5d68e9;margin-bottom:3px}
+
+/* All pages */
+.jobs-hero,.candidates-hero,.analysis-hero,.report-hero,.settings-about-hero,
+.jobs-summary-card,.jobs-list-section,.job-card,.candidate-summary-card,.candidate-filter-card,.candidate-board-section,
+.analysis-selector-card,.analysis-overview-card,.analysis-candidate-list,.analysis-detail-card,.report-kpi-card,.report-card,
+.settings-menu-item,.settings-detail-card,.data-info,.card{
+ background:var(--ios-card)!important;border:1px solid rgba(255,255,255,.94)!important;box-shadow:var(--ios-shadow)!important;
+ backdrop-filter:blur(22px)!important;-webkit-backdrop-filter:blur(22px)!important
+}
+.jobs-hero,.candidates-hero,.analysis-hero,.report-hero{border-radius:23px!important}
+.job-card,.candidate-summary-card,.report-kpi-card,.settings-menu-item,.settings-detail-card{border-radius:17px!important}
+.field input,.field textarea,.field select,.searchrow input,.searchrow select,.candidate-search-box input,.candidate-job-filter,.analysis-select{
+ background:rgba(255,255,255,.88)!important;border:1px solid #e5e8f0!important;border-radius:11px!important;box-shadow:none!important}
+.modal{background:rgba(42,48,67,.28)!important;backdrop-filter:blur(10px)!important}
+.modal-box{background:rgba(255,255,255,.94)!important;border:1px solid rgba(255,255,255,.98)!important;border-radius:23px!important;box-shadow:0 28px 70px rgba(46,54,84,.18)!important}
+.column,.candidate-column{background:rgba(241,244,250,.78)!important;border:1px solid rgba(232,235,243,.8)!important}
+.candidate,.candidate-card-new{background:rgba(255,255,255,.92)!important;border:1px solid #e9ecf3!important;box-shadow:0 5px 16px rgba(70,80,110,.05)!important}
+.table th{background:#f8f9fc!important;color:#8b93a5!important}.table td,.table th{border-bottom-color:#edf0f5!important}
+
+@media(max-width:1100px){.dashboard-kpi-grid{grid-template-columns:repeat(2,1fr)!important}.dashboard-main-grid{grid-template-columns:1fr!important}}
+@media(max-width:720px){
+ .page{padding:16px 14px 96px!important}.topbar{min-height:64px!important;padding:9px 13px!important}
+ .dashboard-hero{min-height:150px!important;padding:24px 20px!important}.dashboard-hero h2{font-size:23px!important}.dashboard-hero-mark{opacity:.5!important;right:-10px!important}
+ .dashboard-kpi-grid{grid-template-columns:repeat(2,1fr)!important;gap:10px!important}.dashboard-kpi-card{min-height:112px!important;padding:14px!important}
+ .dashboard-main-grid{grid-template-columns:1fr!important}.dashboard-score-card{min-height:165px}
+ .mobile-bottom-nav{left:8px!important;right:8px!important;bottom:8px!important;height:67px!important;border:1px solid rgba(255,255,255,.95)!important;border-radius:20px!important;background:rgba(255,255,255,.82)!important;box-shadow:0 12px 35px rgba(60,70,100,.15)!important}
+}
+</style>
+
+
+<style id="ios27-original-reference-final">
+/* 최초 iOS27 시안 디자인을 현재 Full-Function 버전에 적용 */
+:root{
+ --ref-bg:#f4f7fb;--ref-glass:rgba(255,255,255,.70);--ref-text:#0f172a;
+ --ref-muted:#667085;--ref-line:rgba(255,255,255,.72);--ref-blue:#4f7cff;
+ --ref-indigo:#6d5dfc;--ref-shadow:0 18px 45px rgba(68,76,104,.12);--ref-radius:26px
+}
+body{
+ background:
+ radial-gradient(circle at 12% 12%,rgba(121,143,255,.22),transparent 28%),
+ radial-gradient(circle at 88% 18%,rgba(255,170,202,.18),transparent 24%),
+ radial-gradient(circle at 72% 78%,rgba(92,214,192,.18),transparent 24%),
+ linear-gradient(135deg,#eef3fb,#f8fbff 50%,#f7f5ff)!important;
+ background-attachment:fixed!important
+}
+.app,.main{background:transparent!important}
+.sidebar{
+ width:255px!important;padding:18px 14px!important;
+ background:rgba(241,246,255,.62)!important;
+ backdrop-filter:blur(28px) saturate(1.2)!important;-webkit-backdrop-filter:blur(28px) saturate(1.2)!important;
+ border-right:1px solid rgba(255,255,255,.72)!important;box-shadow:12px 0 34px rgba(77,86,120,.08)!important
+}
+.brand{display:flex!important;align-items:center!important;gap:11px!important;padding:9px 10px 22px!important}
+.brand-logo{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#5d73ff,#7657ff);box-shadow:0 10px 24px rgba(92,84,255,.28);position:relative;flex:none}
+.brand-logo:before,.brand-logo:after{content:"";position:absolute;background:white;border-radius:999px;transform:rotate(-35deg)}
+.brand-logo:before{width:8px;height:24px;left:10px;top:9px}.brand-logo:after{width:8px;height:26px;right:10px;top:7px}
+.brand-title{font-size:20px;font-weight:900;letter-spacing:-.6px;color:#0f172a}.brand-title span{font-size:11px!important;color:#667085!important}
+.brand-sub{font-size:10px;color:#667085;margin-top:2px;font-weight:500}
+.nav{gap:7px!important}.nav button{padding:13px 14px!important;border-radius:16px!important;color:#475467!important;font-weight:750!important}
+.nav button.active{background:rgba(255,255,255,.84)!important;color:#315df6!important;box-shadow:0 8px 24px rgba(90,100,140,.11)!important;border:1px solid rgba(255,255,255,.9)!important}
+.nav button.active::after{display:none!important}
+.side-foot{background:rgba(255,255,255,.58)!important;border:1px solid rgba(255,255,255,.78)!important;border-radius:20px!important;box-shadow:0 12px 30px rgba(79,91,130,.08)!important;padding:16px!important;color:#667085!important}
+.topbar{min-height:80px!important;padding:14px 28px!important;background:rgba(247,250,255,.62)!important;backdrop-filter:blur(26px) saturate(1.15)!important;-webkit-backdrop-filter:blur(26px) saturate(1.15)!important;border-bottom:1px solid rgba(255,255,255,.8)!important}
+.page{padding:30px!important;max-width:1550px!important}
+.seed-btn{display:none!important}
+
+/* 최초 iOS27 대시보드 */
+.ios27-hero{display:grid;grid-template-columns:1.4fr .9fr;gap:18px;margin-bottom:18px}
+.ios27-glass{background:var(--ref-glass);border:1px solid var(--ref-line);backdrop-filter:blur(26px) saturate(1.1);-webkit-backdrop-filter:blur(26px) saturate(1.1);box-shadow:var(--ref-shadow);border-radius:var(--ref-radius)}
+.ios27-hero-main{padding:28px 30px;min-height:190px;position:relative;overflow:hidden}
+.ios27-hero-main:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-70px;top:-105px;background:radial-gradient(circle,rgba(91,120,255,.26),rgba(118,83,255,.08) 45%,transparent 70%)}
+.ios27-eyebrow{font-size:11px;font-weight:900;letter-spacing:.12em;color:#5a67d8}
+.ios27-hero h2{font-size:31px;line-height:1.2;margin:8px 0;letter-spacing:-1.1px}.ios27-hero p{margin:0;color:#667085;font-size:14px}
+.ios27-hero-note{padding:26px;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden}
+.ios27-hero-note:before{content:"";position:absolute;inset:auto 10% 0 10%;height:90px;background:linear-gradient(135deg,rgba(127,150,255,.20),rgba(255,165,212,.22));filter:blur(16px);border-radius:50%}
+.ios27-hero-note strong{position:relative;font-size:18px;line-height:1.6}
+.ios27-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
+.ios27-kpi{padding:19px 20px;min-height:126px}.ios27-kpi-top{display:flex;justify-content:space-between;align-items:center}
+.ios27-kpi-icon{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:rgba(88,115,255,.11);color:#536dfe;font-weight:900}
+.ios27-kpi-label{margin-top:14px;color:#475467;font-weight:750;font-size:12px}.ios27-kpi-num{font-size:31px;font-weight:900;margin-top:3px}.ios27-kpi-num small{font-size:13px;color:#667085;font-weight:700}
+.ios27-trend{font-size:10px;padding:5px 8px;border-radius:999px;background:rgba(23,178,106,.12);color:#07884e;font-weight:900}
+.ios27-grid2{display:grid;grid-template-columns:1.35fr .85fr;gap:18px;margin-bottom:18px}.ios27-panel{padding:22px}
+.ios27-panel-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;margin-bottom:18px}.ios27-panel-head h3{margin:0;font-size:18px}.ios27-panel-head p{margin:5px 0 0;color:#667085;font-size:11px}
+.ios27-pipeline{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}.ios27-stage{padding:13px 7px;border-radius:16px;background:rgba(255,255,255,.68);text-align:center;border:1px solid rgba(255,255,255,.88)}
+.ios27-stage strong{display:block;font-size:21px}.ios27-stage span{font-size:10px;color:#667085}.ios27-stage.active{background:linear-gradient(135deg,rgba(89,105,255,.90),rgba(111,78,245,.88));color:white}.ios27-stage.active span{color:#eef1ff}
+.ios27-wave{height:82px;margin-top:14px;border-radius:18px;background:linear-gradient(180deg,rgba(111,132,255,.22),rgba(95,226,201,.18));clip-path:polygon(0 46%,12% 40%,26% 49%,39% 45%,54% 56%,68% 44%,83% 48%,100% 34%,100% 100%,0 100%)}
+.ios27-ring-wrap{display:flex;gap:20px;align-items:center}.ios27-ring{--score:0;width:126px;height:126px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(#5868f6 0 calc(var(--score)*1%),rgba(124,140,190,.15) calc(var(--score)*1%));position:relative;flex:none}
+.ios27-ring:before{content:"";position:absolute;inset:14px;border-radius:50%;background:rgba(255,255,255,.88)}.ios27-ring b{position:relative;font-size:29px}
+.ios27-bars{display:grid;gap:10px;flex:1}.ios27-barrow{display:grid;grid-template-columns:72px 1fr 38px;gap:8px;align-items:center;font-size:11px}.ios27-bar{height:7px;border-radius:999px;background:rgba(122,137,180,.12);overflow:hidden}.ios27-bar i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,#6473ff,#6ac7ff)}
+.ios27-bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.ios27-table{width:100%;border-collapse:collapse}.ios27-table th,.ios27-table td{padding:11px 8px;text-align:left;border-bottom:1px solid rgba(150,160,190,.12);font-size:11px}.ios27-table th{color:#8a94a7;font-size:10px;background:transparent!important}
+.ios27-pill{padding:5px 8px;border-radius:999px;background:rgba(89,108,255,.12);color:#5362df;font-weight:800;font-size:9px}
+.ios27-jobrow{display:grid;grid-template-columns:1.5fr .5fr .7fr;gap:12px;padding:12px 0;border-bottom:1px solid rgba(150,160,190,.12);align-items:center}.ios27-jobrow:last-child{border-bottom:0}.ios27-jobrow strong{font-size:12px}.ios27-jobrow span{font-size:10px;color:#667085}
+.ios27-progress{height:7px;border-radius:999px;background:rgba(120,135,180,.12);overflow:hidden}.ios27-progress i{display:block;height:100%;background:linear-gradient(90deg,#7181ff,#a78bfa);border-radius:999px}
+
+/* 다른 목록/상세 페이지도 같은 배경과 glass 분위기 유지 */
+.card,.jobs-hero,.candidates-hero,.analysis-hero,.report-hero,.settings-about-hero,
+.jobs-summary-card,.jobs-list-section,.job-card,.candidate-summary-card,.candidate-filter-card,.candidate-board-section,
+.analysis-selector-card,.analysis-overview-card,.analysis-candidate-list,.analysis-detail-card,.report-kpi-card,.report-card,
+.settings-menu-item,.settings-detail-card,.modal-box{
+ background:rgba(255,255,255,.70)!important;border:1px solid rgba(255,255,255,.78)!important;
+ backdrop-filter:blur(26px) saturate(1.1)!important;-webkit-backdrop-filter:blur(26px) saturate(1.1)!important;
+ box-shadow:0 18px 45px rgba(68,76,104,.10)!important
+}
+@media(max-width:1100px){.ios27-kpis{grid-template-columns:repeat(2,1fr)}.ios27-grid2,.ios27-hero{grid-template-columns:1fr}}
+@media(max-width:720px){.page{padding:16px 14px 96px!important}.ios27-kpis{grid-template-columns:repeat(2,1fr);gap:10px}.ios27-pipeline{grid-template-columns:repeat(3,1fr)}.ios27-bottom-grid{grid-template-columns:1fr}.ios27-hero h2{font-size:25px}.ios27-hero-main,.ios27-hero-note{padding:20px}}
+</style>
+
+
+<style id="jini-mobile-brand-final">
+/* 모바일에서도 데스크톱과 동일한 Jini ATS 브랜드 아이덴티티 유지 */
+.mobile-brand{display:none}
+@media(max-width:720px){
+  .topbar{
+    height:76px!important;min-height:76px!important;
+    padding:10px 14px!important;
+    justify-content:flex-start!important;
+  }
+  .topbar h1,.topbar .top-actions,.topbar .home-btn,.topbar .save-status{display:none!important}
+  .mobile-brand{
+    display:flex!important;align-items:center;gap:10px;min-width:0;
+  }
+  .mobile-brand-logo{
+    width:44px;height:44px;border-radius:14px;flex:0 0 44px;
+    background:linear-gradient(135deg,#5d73ff,#7657ff);
+    box-shadow:0 8px 20px rgba(92,84,255,.25);position:relative;
+  }
+  .mobile-brand-logo:before,.mobile-brand-logo:after{
+    content:"";position:absolute;background:#fff;border-radius:999px;transform:rotate(-35deg)
+  }
+  .mobile-brand-logo:before{width:8px;height:25px;left:11px;top:9px}
+  .mobile-brand-logo:after{width:8px;height:27px;right:10px;top:7px}
+  .mobile-brand-copy{min-width:0;line-height:1}
+  .mobile-brand-title{
+    color:#172033;font-size:20px;font-weight:900;letter-spacing:-.7px;white-space:nowrap
+  }
+  .mobile-brand-title small{font-size:11px;color:#6f7788;font-weight:800;margin-left:3px}
+  .mobile-brand-sub{
+    margin-top:6px;color:#667085;font-size:10px;font-weight:500;white-space:nowrap;
+    letter-spacing:-.15px
+  }
+}
+</style>
+
+
+<style id="candidate-modal-hotfix">
+/* 지원자 추가/수정 모달은 모든 모바일/데스크톱 UI보다 항상 위 */
+.modal{z-index:1000!important}
+.modal.open{display:flex!important}
+.modal-box{position:relative;z-index:1001!important}
+@media(max-width:720px){
+ .modal{padding:10px!important;align-items:flex-start!important;overflow-y:auto!important}
+ .modal-box{margin:10px 0 86px!important;max-height:none!important;min-height:min-content!important}
+}
+</style>
 </head>
 
 <body>
@@ -7348,16 +7569,13 @@ body{background:radial-gradient(circle at 12% 10%,rgba(122,143,255,.22),transpar
 
   <aside class="sidebar">
 
-    <div class="brand">
-      Jini-ATS <span>STUDIO</span>
-      <div class="version">v3.0 · Full Function</div>
-    </div>
+    <div class="brand"><div class="brand-logo"></div><div><div class="brand-title">Jini ATS <span>3.0</span></div><div class="brand-sub">Better People · A Brighter Tomorrow</div></div></div>
 
     <div class="nav">
       <button class="active" data-page="dashboard">대시보드</button>
-      <button data-page="jobs">채용공고</button>
+      <button data-page="jobs">채용공고 관리</button>
       <button data-page="candidates">지원자 관리</button>
-      <button data-page="analysis">ATS 분석</button>
+      <button data-page="analysis">ATS 분석 리포트</button>
       <button data-page="reports">리포트</button>
       <button data-page="settings">설정</button>
     </div>
@@ -7371,6 +7589,13 @@ body{background:radial-gradient(circle at 12% 10%,rgba(122,143,255,.22),transpar
 
   <main class="main">
   <header class="topbar">
+<div class="mobile-brand" aria-label="Jini ATS 3.0">
+  <div class="mobile-brand-logo"></div>
+  <div class="mobile-brand-copy">
+    <div class="mobile-brand-title">Jini ATS<small>3.0</small></div>
+    <div class="mobile-brand-sub">Better People · A Brighter Tomorrow</div>
+  </div>
+</div>
   <div class="top-left">
 
   <button
@@ -7400,7 +7625,7 @@ body{background:radial-gradient(circle at 12% 10%,rgba(122,143,255,.22),transpar
         </span>
 
         <!-- 실제 데이터와 별개로 동작 -->
-        <button class="btn seed-btn" id="seedBtn">
+        <button class="btn seed-btn" id="seedBtn" aria-hidden="true" tabindex="-1">
           데모 데이터 불러오기
         </button>
 
@@ -8646,663 +8871,46 @@ updateSaveStatus();
    대시보드
    ============================================================ */
 function renderDashboard(){
-
-  const avg =
-    Math.round(
-      state.candidates.reduce(
-        (a,c)=>a+(Number(c.score)||0),
-        0
-      ) /
-      Math.max(
-        1,
-        state.candidates.length
-      )
-    );
-
-  const open =
-    state.jobs.filter(
-      j=>j.status==='진행중'
-    ).length;
-
-  const high =
-    state.candidates.filter(
-      c=>(Number(c.score)||0)>=85
-    ).length;
-
-
-  /* ----------------------------------------------------------
-     최근 지원자
-     ---------------------------------------------------------- */
-
-  const recentCandidates =
-    state.candidates
-      .slice()
-      .sort(
-        (a,b)=>
-          (Number(b.score)||0) -
-          (Number(a.score)||0)
-      )
-      .slice(0,6);
-
-
-  /* ----------------------------------------------------------
-     진행중 공고
-     ---------------------------------------------------------- */
-
-  const openJobs =
-    state.jobs
-      .filter(
-        j=>j.status==='진행중'
-      )
-      .slice(0,5);
-
-
-  $('#page').innerHTML = `
-
-    <!-- ======================================================
-         Dashboard Hero
-         ====================================================== -->
-
-    <section class="dashboard-hero">
-
-      <div class="dashboard-hero-text">
-
-        <div class="dashboard-eyebrow">
-          Jini-ATS
-        </div>
-
-        <h2>
-          채용 현황을<br>
-          한눈에 확인하세요.
-        </h2>
-
-        <p>
-          현재 진행 중인 채용과 지원자 현황을
-          한 곳에서 확인할 수 있습니다.
-        </p>
-
-      </div>
-
-      <div class="dashboard-hero-mark">
-        <div class="dashboard-hero-orb"></div>
-      </div>
-
-    </section>
-
-
-    <div style="height:18px"></div>
-
-
-    <!-- ======================================================
-         KPI
-         ====================================================== -->
-
-    <section class="dashboard-kpi-grid">
-
-
-      <!-- 진행중 공고 -->
-
-      <div class="dashboard-kpi-card">
-
-        <div class="dashboard-kpi-top">
-
-          <div class="dashboard-kpi-icon blue">
-            ✓
-          </div>
-
-          <span class="badge b-blue">
-            LIVE
-          </span>
-
-        </div>
-
-        <div class="dashboard-kpi-label">
-          진행중 공고
-        </div>
-
-        <div class="dashboard-kpi-number">
-          ${open}
-        </div>
-
-        <div class="dashboard-kpi-description">
-          현재 모집 중인 채용공고
-        </div>
-
-      </div>
-
-
-      <!-- 전체 지원자 -->
-
-      <div class="dashboard-kpi-card">
-
-        <div class="dashboard-kpi-top">
-
-          <div class="dashboard-kpi-icon indigo">
-            사람
-          </div>
-
-          <span class="badge b-gray">
-            전체
-          </span>
-
-        </div>
-
-        <div class="dashboard-kpi-label">
-          전체 지원자
-        </div>
-
-        <div class="dashboard-kpi-number">
-          ${state.candidates.length}
-        </div>
-
-        <div class="dashboard-kpi-description">
-          등록된 전체 지원자
-        </div>
-
-      </div>
-
-
-      <!-- 평균 ATS -->
-
-      <div class="dashboard-kpi-card">
-
-        <div class="dashboard-kpi-top">
-
-          <div class="dashboard-kpi-icon green">
-            A
-          </div>
-
-          <span class="badge b-green">
-            ATS
-          </span>
-
-        </div>
-
-        <div class="dashboard-kpi-label">
-          평균 ATS 점수
-        </div>
-
-        <div class="dashboard-kpi-number">
-          ${avg}
-        </div>
-
-        <div class="dashboard-kpi-description">
-          전체 지원자 평균 점수
-        </div>
-
-      </div>
-
-
-      <!-- 추천 후보 -->
-
-      <div class="dashboard-kpi-card">
-
-        <div class="dashboard-kpi-top">
-
-          <div class="dashboard-kpi-icon orange">
-            ★
-          </div>
-
-          <span class="badge b-amber">
-            85점+
-          </span>
-
-        </div>
-
-        <div class="dashboard-kpi-label">
-          추천 후보
-        </div>
-
-        <div class="dashboard-kpi-number">
-          ${high}
-        </div>
-
-        <div class="dashboard-kpi-description">
-          ATS 85점 이상 후보자
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <div style="height:18px"></div>
-
-
-    <!-- ======================================================
-         채용 Funnel + 최근 지원자
-         ====================================================== -->
-
-    <section class="dashboard-main-grid">
-
-
-      <!-- ====================================================
-           채용 Funnel
-           ==================================================== -->
-
-      <div class="dashboard-panel">
-
-        <div class="dashboard-panel-header">
-
-          <div>
-
-            <div class="dashboard-panel-title">
-              채용 진행 현황
-            </div>
-
-            <div class="dashboard-panel-subtitle">
-              전체 공고 기준
-            </div>
-
-          </div>
-
-          <span class="dashboard-panel-icon">
-            ↗
-          </span>
-
-        </div>
-
-
-        <div class="dashboard-funnel">
-
-          ${
-            stages.map(
-              (s,i)=>{
-
-                const n =
-                  state.candidates.filter(
-                    c=>(Number(c.stage)||0)>=i
-                  ).length;
-
-                const pct =
-                  Math.round(
-                    n /
-                    Math.max(
-                      1,
-                      state.candidates.length
-                    ) *
-                    100
-                  );
-
-                return `
-
-                  <div class="dashboard-funnel-row">
-
-                    <div class="dashboard-funnel-label">
-
-                      <span>
-                        ${esc(s)}
-                      </span>
-
-                      <b>
-                        ${n}명
-                      </b>
-
-                    </div>
-
-                    <div class="dashboard-funnel-track">
-
-                      <div
-                        class="dashboard-funnel-fill"
-                        style="width:${pct}%"
-                      ></div>
-
-                    </div>
-
-                    <div class="dashboard-funnel-percent">
-                      ${pct}%
-                    </div>
-
-                  </div>
-
-                `;
-
-              }
-            ).join('')
-          }
-
-        </div>
-
-      </div>
-
-
-      <!-- ====================================================
-           최근 지원자
-           ==================================================== -->
-
-      <div class="dashboard-panel">
-
-        <div class="dashboard-panel-header">
-
-          <div>
-
-            <div class="dashboard-panel-title">
-              추천 지원자
-            </div>
-
-            <div class="dashboard-panel-subtitle">
-              ATS 점수가 높은 순서
-            </div>
-
-          </div>
-
-          <button
-            class="dashboard-more-btn"
-            onclick="go('candidates')"
-          >
-            전체 보기 →
-          </button>
-
-        </div>
-
-
-        <div class="dashboard-candidate-list">
-
-          ${
-            recentCandidates.length
-            ?
-
-            recentCandidates.map(
-              c=>{
-
-                const j =
-                  state.jobs.find(
-                    j=>j.id===c.job
-                  );
-
-                const first =
-                  (c.name || '?')[0];
-
-                const score =
-                  Number(c.score)||0;
-
-                return `
-
-                  <div class="dashboard-candidate-row">
-
-                    <div class="dashboard-candidate-avatar">
-                      ${esc(first)}
-                    </div>
-
-
-                    <div class="dashboard-candidate-info">
-
-                      <div class="dashboard-candidate-name">
-                        ${esc(
-                          c.name ||
-                          '이름 미확인'
-                        )}
-                      </div>
-
-                      <div class="dashboard-candidate-meta">
-
-                        ${esc(
-                          j?.title ||
-                          '공고 미지정'
-                        )}
-
-                        ·
-
-                        ${esc(
-                          c.years ||
-                          0
-                        )}년
-
-                      </div>
-
-                    </div>
-
-
-                    <div class="dashboard-candidate-score">
-
-                      <strong
-                        class="${
-                          score>=85
-                            ? 'good'
-                            : score>=70
-                              ? 'mid'
-                              : 'low'
-                        }"
-                      >
-                        ${score}
-                      </strong>
-
-                      <span>
-                        ATS
-                      </span>
-
-                    </div>
-
-                  </div>
-
-                `;
-
-              }
-            ).join('')
-
-            :
-
-            `
-
-              <div class="dashboard-empty">
-                등록된 지원자가 없습니다.
-              </div>
-
-            `
-          }
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <div style="height:18px"></div>
-
-
-    <!-- ======================================================
-         진행중인 채용공고
-         ====================================================== -->
-
-    <section class="dashboard-panel">
-
-      <div class="dashboard-panel-header">
-
-        <div>
-
-          <div class="dashboard-panel-title">
-            진행중인 채용공고
-          </div>
-
-          <div class="dashboard-panel-subtitle">
-            현재 모집 중인 포지션
-          </div>
-
-        </div>
-
-        <button
-          class="dashboard-more-btn"
-          onclick="go('jobs')"
-        >
-          전체 보기 →
-        </button>
-
-      </div>
-
-
-      ${
-        openJobs.length
-
-        ?
-
-        `
-
-        <div class="dashboard-job-list">
-
-          ${
-            openJobs.map(
-              j=>{
-
-                const applicants =
-                  state.candidates.filter(
-                    c=>c.job===j.id
-                  );
-
-                const jobAvg =
-                  Math.round(
-                    applicants.reduce(
-                      (a,c)=>
-                        a+(Number(c.score)||0),
-                      0
-                    ) /
-                    Math.max(
-                      1,
-                      applicants.length
-                    )
-                  );
-
-                return `
-
-                  <div class="dashboard-job-row">
-
-
-                    <div class="dashboard-job-main">
-
-                      <div class="dashboard-job-status">
-                        진행중
-                      </div>
-
-                      <div class="dashboard-job-title">
-                        ${esc(
-                          j.title ||
-                          '채용공고'
-                        )}
-                      </div>
-
-                      <div class="dashboard-job-meta">
-
-                        ${esc(
-                          j.dept ||
-                          ''
-                        )}
-
-                        ${
-                          j.location
-                          ? ` · ${esc(j.location)}`
-                          : ''
-                        }
-
-                      </div>
-
-                    </div>
-
-
-                    <div class="dashboard-job-stat">
-
-                      <span>
-                        지원자
-                      </span>
-
-                      <strong>
-                        ${applicants.length}
-                      </strong>
-
-                    </div>
-
-
-                    <div class="dashboard-job-stat">
-
-                      <span>
-                        평균 ATS
-                      </span>
-
-                      <strong
-                        class="${
-                          jobAvg>=85
-                            ? 'good'
-                            : jobAvg>=70
-                              ? 'mid'
-                              : 'low'
-                        }"
-                      >
-                        ${jobAvg}
-                      </strong>
-
-                    </div>
-
-
-                  </div>
-
-                `;
-
-              }
-            ).join('')
-          }
-
-        </div>
-
-        `
-
-        :
-
-        `
-
-          <div class="dashboard-empty dashboard-empty-large">
-
-            <div class="dashboard-empty-icon">
-              +
-            </div>
-
-            <div>
-              진행중인 채용공고가 없습니다.
-            </div>
-
-            <button
-              class="btn primary"
-              onclick="go('jobs')"
-            >
-              채용공고 등록하기
-            </button>
-
-          </div>
-
-        `
-      }
-
-    </section>
-
-
-    <div style="height:18px"></div>
-
-
-    <!-- ======================================================
-         저장 안내
-         ====================================================== -->
-
-    <div class="data-info dashboard-save-info">
-
-      <span class="dashboard-save-icon">
-        ✓
-      </span>
-
-      <div>
-
-        <b>
-          데이터 자동 저장
-        </b>
-
-        <div>
-          지원자와 채용공고 변경사항은
-          브라우저/APK 저장공간에 자동 저장됩니다.
-        </div>
-
-      </div>
-
+  const total=state.candidates.length;
+  const open=state.jobs.filter(j=>j.status==='진행중').length;
+  const avg=Math.round(state.candidates.reduce((a,c)=>a+(Number(c.score)||0),0)/Math.max(1,total));
+  const high=state.candidates.filter(c=>(Number(c.score)||0)>=85).length;
+  const counts=stages.map((_,i)=>state.candidates.filter(c=>(Number(c.stage)||0)===i).length);
+  const dist=[
+    ['90점 이상',state.candidates.filter(c=>(Number(c.score)||0)>=90).length],
+    ['70–89점',state.candidates.filter(c=>{const s=Number(c.score)||0;return s>=70&&s<90}).length],
+    ['50–69점',state.candidates.filter(c=>{const s=Number(c.score)||0;return s>=50&&s<70}).length],
+    ['50점 미만',state.candidates.filter(c=>(Number(c.score)||0)<50).length]
+  ];
+  $('#page').innerHTML=`
+  <section class="ios27-hero">
+    <div class="ios27-hero-main ios27-glass"><div class="ios27-eyebrow">JINI ATS · IOS 27 EDITION</div>
+      <h2>좋은 인재가,<br>더 나은 내일을 만듭니다.</h2><p>채용의 모든 순간을 하나의 흐름으로 관리하세요.</p>
     </div>
-
-  `;
-
+    <div class="ios27-hero-note ios27-glass"><strong>“사람을 연결하는 일이<br>더 좋은 세상을 만듭니다.”</strong></div>
+  </section>
+  <section class="ios27-kpis">${[
+    ['진행중 채용',open,'건','LIVE','▣'],['전체 지원자',total,'명','ALL','◉'],
+    ['평균 ATS',avg,'점','ATS','A'],['추천 후보',high,'명','85+','★']
+  ].map(x=>`<div class="ios27-kpi ios27-glass"><div class="ios27-kpi-top"><div class="ios27-kpi-icon">${x[4]}</div><span class="ios27-trend">${x[3]}</span></div><div class="ios27-kpi-label">${x[0]}</div><div class="ios27-kpi-num">${x[1]} <small>${x[2]}</small></div></div>`).join('')}</section>
+  <section class="ios27-grid2">
+    <div class="ios27-panel ios27-glass"><div class="ios27-panel-head"><div><h3>채용 파이프라인</h3><p>전체 지원자의 전형별 현황입니다.</p></div></div>
+      <div class="ios27-pipeline">${stages.map((s,i)=>`<div class="ios27-stage ${i===0?'active':''}"><strong>${counts[i]}</strong><span>${esc(s)}</span></div>`).join('')}</div><div class="ios27-wave"></div>
+    </div>
+    <div class="ios27-panel ios27-glass"><div class="ios27-panel-head"><div><h3>ATS 분석 현황</h3><p>지원자 직무 적합도 요약</p></div><button class="btn" onclick="go('analysis')">분석보기</button></div>
+      <div class="ios27-ring-wrap"><div class="ios27-ring" style="--score:${Math.max(0,Math.min(100,avg))}"><b>${avg}</b></div>
+        <div class="ios27-bars">${dist.map(([label,n])=>{const p=Math.round(n/Math.max(1,total)*100);return `<div class="ios27-barrow"><span>${label}</span><div class="ios27-bar"><i style="width:${p}%"></i></div><b>${p}%</b></div>`}).join('')}</div>
+      </div>
+    </div>
+  </section>
+  <section class="ios27-bottom-grid">
+    <div class="ios27-panel ios27-glass"><div class="ios27-panel-head"><div><h3>최근 지원자</h3><p>등록된 지원자</p></div><button class="btn" onclick="go('candidates')">전체보기</button></div>
+      <table class="ios27-table"><tr><th>이름</th><th>지원 포지션</th><th>ATS</th><th>단계</th></tr>${state.candidates.slice(0,6).map(c=>{const j=state.jobs.find(x=>x.id===c.job);return `<tr><td><b>${esc(c.name)}</b></td><td>${esc(j?.title||'-')}</td><td>${Number(c.score)||0}</td><td><span class="ios27-pill">${esc(stages[Number(c.stage)||0]||'-')}</span></td></tr>`}).join('')}</table>
+    </div>
+    <div class="ios27-panel ios27-glass"><div class="ios27-panel-head"><div><h3>진행중 채용공고</h3><p>현재 모집 중인 포지션</p></div><button class="btn" onclick="go('jobs')">전체보기</button></div>
+      ${state.jobs.filter(j=>j.status==='진행중').slice(0,6).map(j=>{const n=state.candidates.filter(c=>c.job===j.id).length;return `<div class="ios27-jobrow"><div><strong>${esc(j.title)}</strong><br><span>${esc(j.dept||'')} · ${esc(j.location||'')}</span></div><b>${n}명</b><div><div class="ios27-progress"><i style="width:${Math.min(100,n*12)}%"></i></div></div></div>`}).join('')}
+    </div>
+  </section>`;
 }
 
 /* ============================================================
@@ -9964,7 +9572,7 @@ function renderCandidates(){
 
         <button
           class="btn primary"
-          onclick="openCandidate()"
+          data-action="add-candidate"
         >
           + 지원자 추가
         </button>
@@ -14812,7 +14420,7 @@ function saveJob(id){
    지원자 등록/수정
    ============================================================ */
 
-function openCandidate(id){
+function openCandidate(id=0){
 
   const c =
     id
@@ -16813,5 +16421,16 @@ function updateMobileBottomNav(){
 
 </script>
   
+
+<script id="candidate-add-hotfix">
+/* 동적 렌더링 후에도 지원자 추가 버튼 클릭을 확실히 연결 */
+document.addEventListener('click', function(e){
+  const btn=e.target.closest('[data-action="add-candidate"]');
+  if(!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  openCandidate(0);
+});
+</script>
 </body>
 </html>
